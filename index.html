@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,123 +14,335 @@
         form { margin-top: 20px; }
         input, button, textarea, select { padding: 10px; margin: 5px; width: 80%; max-width: 400px; }
     </style>
+</head> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Tutoring</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; 
+            background: #87CEEB; padding-top: 45px; /* Add padding to prevent the content from being hidden behind the header */ }
+        header { background: #339966; color: white; padding: 20px; font-size: 36px; font-weight: bold; }
+        section { padding: 30px; max-width: 800px; margin: auto; }
+        img { max-width: 200px; border-radius: 50%; }
+        .subjects, .rates { text-align: left; display: inline-block; }
+        footer { background: #339966; color: white; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        form { margin-top: 20px; }
+        input, button, textarea, select { padding: 10px; margin: 5px; width: 80%; max-width: 400px; }
+        nav { background-color: #339966; padding: 15px; margin-bottom: 20px; 
+            position: fixed; /* Keeps the header fixed at the top */
+            top: 0; /* Aligns the header at the top */
+            left: 0; /* Aligns the header to the left of the page */
+            width: 100%; /* Ensures the header spans the full width */
+            z-index: 1000; /* Keeps the header above other content */}
+        nav a { color: white; text-decoration: none; padding: 10px 15px; margin: 0 5px; }
+        nav a:hover { background-color: #4CAF50; }
+
+
+    </style>
 </head>
 <body>
     <header>
         Math Tutoring Services
     </header>
-    <section>
+
+    <!-- Table of Contents -->
+    <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#subjects-offered">Subjects Offered</a>
+        <a href="#math-tutoring-rates">Math Tutoring Rates</a>
+        <a href="#payment-methods">Payment Methods</a>
+        <a href="#contact-form">Contact Form</a>
+        <a href="#refund-cancellation">Refund and Cancellation Policy</a>
+    </nav>
+    <section  id="about-me">
+        <h2>About Me</h2>
+            <img src="Dorian_Headshot.png" alt="Your Picture">
+            <h3>Dorian Lemus</h3>
+            <p>Hi! I offer tutoring for a wide range of math subjects, from elementary math to advanced college-level courses.
+            I am a college student majoring in Electrical Engineering. I love math and helping others to become confident and fill in the gaps in their knowledge. 
+            I will meet you at any level you are and we will grow from there. Online and in-person tutoring available. Flexible hours 7 days a week. Hablo español!</p>
+
+            <h2>Contact</h2>
+            <p>Reach out to me via phone or email for a consultation.</p>
+            <p>Email: <a href="mailto:DorianLemusCruz@gmail.com">DorianLemusCruz@gmail.com</a></p>
+            <p>Phone: <a href="tel:+14147455748">(414) 745-5748</a></p>
+    </section>    
+    <section id="subjects-offered">
         <h2>Subjects Offered</h2>
         <div class="subjects">
-            <ul>
-                <!-- <li>Elementary Math</li> -->
-                <li>Algebra</li>
-                <li>Geometry</li>
-                <li>Trigonometry</li>
-                <li>Pre-Calculus</li>
-                <li>Calculus 1 & 2</li>
-                <li>Differential Equations</li>
-            </ul>
+            
+                <h3>Middle School (Grades 6-8)</h3>
+                <ul>
+                    <li><strong>6th Grade Math:</strong> Basic arithmetic, fractions, decimals, percentages, ratios, introduction to algebraic thinking.</li>
+                    <li><strong>7th Grade Math:</strong> Pre-Algebra, proportions, simple equations, inequalities, probability, and geometry basics.</li>
+                    <li><strong>8th Grade Math:</strong> Algebra 1 (for advanced students) or Pre-Algebra (integers, exponents, linear equations, graphing).</li>
+                </ul>
+            
+                <h3>High School (Grades 9-12)</h3>
+            
+                <h4>9th Grade (Freshman Year)</h4>
+                <ul>
+                    <li><strong>Algebra 1:</strong> Variables, linear equations, inequalities, functions, graphing, and polynomials.</li>
+                    <li>Advanced students may take <strong>Geometry</strong> instead.</li>
+                </ul>
+            
+                <h4>10th Grade (Sophomore Year)</h4>
+                <ul>
+                    <li><strong>Geometry:</strong> Shapes, theorems, coordinate geometry, trigonometric ratios, and proofs.</li>
+                    <li>Some students may take <strong>Algebra 2</strong> instead or alongside Geometry.</li>
+                </ul>
+            
+                <h4>11th Grade (Junior Year)</h4>
+                <ul>
+                    <li><strong>Algebra 2:</strong> Quadratic functions, complex numbers, logarithms, polynomials, exponential functions.</li>
+                    <li>Some advanced students take <strong>Pre-Calculus</strong> or <strong>Trigonometry</strong>.</li>
+                </ul>
+            
+                <h4>12th Grade (Senior Year)</h4>
+                <ul>
+                    <li><strong>Pre-Calculus:</strong> Advanced algebra, trigonometry, limits, introduction to derivatives.</li>
+                    <li><strong>Calculus (AP Calculus AB/BC):</strong> Differentiation, integration, and limits (for advanced students).</li>
+                    <li><strong>Statistics (AP Statistics):</strong> Probability, data analysis, inferential statistics (alternative to Calculus).</li>
+                </ul>
+            
+                <h3>Advanced & College-Level Courses</h3>
+                <ul>
+                    <li><strong>Calculus 1 & 2:</strong> Limits, derivatives, integrals, applications of calculus.</li>
+                    <li><strong>Differential Equations:</strong> Solving ODEs, applications in engineering and physics.</li>
+                </ul>
         </div>
-    <!-- </section>
-    <section> -->
-        <h2>About Me</h2>
-        <img src="Dorian_Headshot.png" alt="Your Picture">
-        <h2>Dorian Lemus</h2>
-        <p>Hi! I offer tutoring for a wide range of math subjects, from elementary math to advanced college-level courses.
-        I am a college student majoring in Electrical Engineering. I love math and helping others to become confident and fill in the gaps in their knowledge. 
-        I will meet you at any level you are and we will grow from there. Online and in-person tutoring available. Flexible hours 7 days a week. Hablo español!</p>
-    <!-- </section>
-    <section> -->
-        <h2>Contact</h2>
-        <p>Email: DorianLemusCruz@gmail.com</p>
-        <p>Phone: (414) 745-5748</p>
-    <!-- </section>
-    <section> -->
-        <h2>Rates & Payment</h2>
-        <div class="rates">
-            <p><strong>Hourly Rates:</strong></p>
-            <ul>
-                <li>$25 per hour</li>
-                <li>$45 for 2 hours</li>
-            </ul>
-            <p><strong>Individual Problem Walkthrough:</strong> </p>
-            <u1>
-                <li>Starting at $5 per problem depending on complexity</li>
-                <p>* You will receive a detailed breakdown of the problem</p>
-            </u1>
-            <p><strong>Payment Methods:</strong></p>
-            <ul>
-                <li>Cash</li>
-                <li>Zelle - 414-745-5748</li>
-                <li>Venmo - @RunRedFox</li>
-                <li>CashApp - $DorianL95</li>
-                <li>Paypal - DorianLemusCruz@gmail.com</li>
-            </ul>
+    </section>
+    <section id="math-tutoring-rates">
+        <h2>Math Tutoring Rates</h2>
+        <p>Rates are based on the complexity of the subject, session type, and whether tutoring is online or in-person.</p>
+    
+        <table border="1" cellspacing="0" cellpadding="5" style="border-collapse: collapse; width: 100%; text-align: center;">
+            <thead>
+                <tr>
+                    <th>Grade Level</th>
+                    <th style="text-align: left;">Service</th>
+                    <th>Online Rate</th>
+                    <th>In-Person Rate</th>
+                    <th>Premium (Travel to You)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Middle School -->
+                <!-- <tr><td colspan="5" style="background-color: #ddd;"><strong>Middle School (6-8)</strong></td></tr> -->
+                <tr>
+                    <td rowspan="3">Middle School</td>
+                    <td style="text-align: left;">- Individual Problem Walkthrough</td>
+                    <td>$5+</td>
+                    <td>$7+</td>
+                    <td>$10+</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">- 1 Hour Tutoring Session</td>
+                    <td>$25</td>
+                    <td>$30</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">- 2 Hour Tutoring Session</td>
+                    <td>$45</td>
+                    <td>$50</td>
+                    <td>$60</td>
+                </tr>
+    
+                <!-- High School -->
+                <!-- <tr><td colspan="5" style="background-color: #ddd;"><strong>High School (9-12)</strong></td></tr> -->
+                <tr>
+                    <td rowspan="3">High School</td>
+                    <td style="text-align: left;">- Individual Problem Walkthrough</td>
+                    <td>$5+</td>
+                    <td>$10+</td>
+                    <td>$15+</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">- 1 Hour Tutoring Session</td>
+                    <td>$25</td>
+                    <td>$35</td>
+                    <td>$45</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">- 2 Hour Tutoring Session</td>
+                    <td>$45</td>
+                    <td>$55</td>
+                    <td>$70</td>
+                </tr>
+    
+                <!-- College/Advanced Math -->
+                <!-- <tr><td colspan="5" style="background-color: #ddd;"><strong>College Level / Advanced Math</strong></td></tr> -->
+                <tr>
+                    <td rowspan="3">College Level</td>
+                    <td style="text-align: left;">- Individual Problem Walkthrough</td>
+                    <td>$10+</td>
+                    <td>$15+</td>
+                    <td>$20+</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">- 1 Hour Tutoring Session</td>
+                    <td>$30</td>
+                    <td>$40</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">- 2 Hour Tutoring Session</td>
+                    <td>$50</td>
+                    <td>$60</td>
+                    <td>$75</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <p><strong>Note:</strong> Premium rates apply if I have to travel to you. Prices may vary depending on subject complexity.</p>
+    </section>
+    <section id="payment-methods">
+    <h2>Payment Methods:</h2>
+    <div class="rates">
+        <!-- <p><strong>Hourly Rates:</strong></p>
+        <ul>
+            <li>$25 per hour</li>
+            <li>$45 for 2 hours</li>
+        </ul>
+        <p><strong>Individual Problem Walkthrough:</strong> </p>
+        <u1>
+            <li>Starting at $5 per problem depending on complexity</li>
+            <p>* You will receive a detailed breakdown of the problem</p>
+        </u1> -->
+        <!-- <p><strong>Payment Methods:</strong></p> -->
+        <ul>
+            <li>Cash</li>
+            <li>Zelle - 414-745-5748</li>
+            <li>Venmo - @RunRedFox</li>
+            <li>CashApp - $DorianL95</li>
+            <li>Paypal - DorianLemusCruz@gmail.com</li>
+        </ul>
+    </div>
+    <h3>Pay via PayPal</h3>
+    <p>Make sure to fill out the contact form below if you haven't already indicated what service you selected.
+        Once payment is received I will send you an email with the next steps to schedule our session. 
+        Virtual Sessions are done via Google Meets or Zoom.
+    </p>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal-form">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="DorianLemusCruz@gmail.com">
+        <input type="hidden" name="item_name" id="paypal-item-name" value="Math Tutoring Service">
+        <input type="hidden" name="amount" id="paypal-amount" value="">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="services">
+        <input type="hidden" name="no_note" value="1">
+        <input type="hidden" name="no_shipping" value="1">
+        <input type="hidden" name="rm" value="1">
+        <input type="hidden" name="return" value="https://yourwebsite.com/success">
+        <input type="hidden" name="cancel_return" value="https://yourwebsite.com/cancel">
+        
+        <!-- <label for="service-select">Select a Service:</label> -->
+        <select name="service" id="service-select" required>
+            <option disabled selected>Select a service...</option>
+
+            <!-- Middle School -->
+            <optgroup label="Middle School (6-8)">
+                <option value="5.00|Individual Problem Walkthrough (Online)">- Individual Problem Walkthrough (Online) - $5+</option>
+                <option value="25.00|1 Hour Tutoring (Online)">- 1 Hour Tutoring (Online) - $25</option>
+                <option value="45.00|2 Hour Tutoring (Online)">- 2 Hour Tutoring (Online) - $45</option>
+                <option value="35.00|1 Hour Tutoring (In-Person)">- 1 Hour Tutoring (In-Person) - $35</option>
+                <option value="60.00|2 Hour Tutoring (In-Person)">- 2 Hour Tutoring (In-Person) - $60</option>
+            </optgroup>
+
+            <!-- High School -->
+            <optgroup label="High School (9-12)">
+                <option value="5.00|Individual Problem Walkthrough (Online)">- Individual Problem Walkthrough (Online) - $5+</option>
+                <option value="25.00|1 Hour Tutoring (Online)">- 1 Hour Tutoring (Online) - $25</option>
+                <option value="45.00|2 Hour Tutoring (Online)">- 2 Hour Tutoring (Online) - $45</option>
+                <option value="35.00|1 Hour Tutoring (In-Person)">- 1 Hour Tutoring (In-Person) - $35</option>
+                <option value="60.00|2 Hour Tutoring (In-Person)">- 2 Hour Tutoring (In-Person) - $60</option>
+            </optgroup>
+
+            <!-- College Level -->
+            <optgroup label="College Level / Advanced Math">
+                <option value="10.00|Individual Problem Walkthrough (Online)">- Individual Problem Walkthrough (Online) - $10+</option>
+                <option value="30.00|1 Hour Tutoring (Online)">- 1 Hour Tutoring (Online) - $30</option>
+                <option value="50.00|2 Hour Tutoring (Online)">- 2 Hour Tutoring (Online) - $50</option>
+                <option value="40.00|1 Hour Tutoring (In-Person)">- 1 Hour Tutoring (In-Person) - $40</option>
+                <option value="70.00|2 Hour Tutoring (In-Person)">- 2 Hour Tutoring (In-Person) - $70</option>
+            </optgroup>
+
+            <!-- Premium Travel Charge -->
+            <optgroup label="Premium Travel Charges">
+                <option value="10.00|Additional Travel Fee (Local)">- Additional Travel Fee (Local) - $10</option>
+                <option value="20.00|Additional Travel Fee (Extended Distance)">- Additional Travel Fee (Extended Distance) - $20</option>
+            </optgroup>
+
+            <!-- Custom Amount Option -->
+            <optgroup label="Other">
+                <option value="custom">- Enter Custom Amount -</option>
+            </optgroup>
+        </select>
+
+        <!-- Custom Amount Input -->
+        <div id="custom-amount-container" style="display: none; text-align: center;">
+            <input type="number" id="custom_amount" name="custom_amount" placeholder="$ Enter custom amount" step="0.01" min="1" style="margin-top: 10px;">
+            <input type="text" id="custom_description" name="custom_description" placeholder="Memo: what this payment is for?" style="margin-top: 10px; width: 100%;">
         </div>
-        <h3>Pay via PayPal</h3>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal-form">
-            <input type="hidden" name="cmd" value="_xclick">
-            <input type="hidden" name="business" value="DorianLemusCruz@gmail.com">
-            <input type="hidden" name="item_name" value="Math Tutoring Service">
-            
-            <select name="amount" id="amount-select" required>
-                <option value="5.00">$5 - Individual Problem Walkthrough</option>
-                <option value="25.00">$25 - 1 Hour Tutoring Session</option>
-                <option value="45.00">$45 - 2 Hour Tutoring Session</option>
-                <option value="custom">Other (Enter Amount Below)</option>   
-            </select>
-            
-            <!-- Custom Amount Input -->
-            <div id="custom-amount-container" style="display: none; text-align: center;">
-                <input type="number" id="custom_amount" name="custom_amount" placeholder="Enter custom amount" step="0.01" min="1" style="margin-top: 10px;">
-            </div>
-            
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="hidden" name="button_subtype" value="services">
-            <input type="hidden" name="no_note" value="1">
-            <input type="hidden" name="no_shipping" value="1">
-            <input type="hidden" name="rm" value="1">
-            <input type="hidden" name="return" value="https://yourwebsite.com/success">
-            <input type="hidden" name="cancel_return" value="https://yourwebsite.com/cancel">
-            
-            <button type="submit">Pay via PayPal</button>
-        </form>
 
-        <script>
-        // Show/hide custom input field based on select option
-        document.getElementById("amount-select").addEventListener("change", function() {
-            const customAmountContainer = document.getElementById("custom-amount-container");
-            const customAmountInput = document.getElementById("custom_amount");
-            if (this.value === "custom") {
-                customAmountContainer.style.display = "block"; // Show input
-                customAmountInput.required = true; // Make the custom amount input required
-            } else {
-                customAmountContainer.style.display = "none"; // Hide input
-                customAmountInput.required = false; // Make it not required if not selected
-            }
-        });
 
-        // Update the amount field before submitting the form
-        document.getElementById("paypal-form").addEventListener("submit", function(event) {
-            const amountSelect = document.getElementById("amount-select");
-            const customAmountInput = document.getElementById("custom_amount");
-            
-            // Get the hidden amount input field
-            const amountField = this.querySelector('input[name="amount"]');
-            
-            // If "Other" is selected and a custom amount is entered, update the amount field
-            if (amountSelect.value === "custom" && customAmountInput.value) {
-                amountField.value = customAmountInput.value;  // Set the custom amount to the hidden amount field
-            } else if (amountSelect.value !== "custom") {
-                amountField.value = amountSelect.value;  // Set the selected value for the predefined amounts
-            }
+        <button type="submit">Pay via PayPal</button>
+    </form>
 
-            // Debugging stage - Display the amount being sent to PayPal
-            alert("Amount being sent to PayPal: " + amountField.value);
-        });
-        </script>
+    <script>
+        document.getElementById("service-select").addEventListener("change", function() {
+        const selectedOption = this.value;
+        const customAmountContainer = document.getElementById("custom-amount-container");
+        const customAmountInput = document.getElementById("custom_amount");
+        const customDescriptionInput = document.getElementById("custom_description");
+
+        if (selectedOption === "custom") {
+            customAmountContainer.style.display = "block"; 
+            customAmountInput.required = true;
+            customDescriptionInput.required = true;
+        } else {
+            customAmountContainer.style.display = "none";
+            customAmountInput.required = false;
+            customDescriptionInput.required = false;
+
+            // Extract amount and description from the selected option
+            const [amount, description] = selectedOption.split("|");
+            document.getElementById("paypal-amount").value = amount;
+            document.getElementById("paypal-item-name").value = description;
+        }
+    });
+
+    document.getElementById("paypal-form").addEventListener("submit", function(event) {
+        const serviceSelect = document.getElementById("service-select");
+        const customAmountInput = document.getElementById("custom_amount");
+        const customDescriptionInput = document.getElementById("custom_description");
+
+        let amountValue = document.getElementById("paypal-amount").value;
+        let descriptionValue = document.getElementById("paypal-item-name").value;
+
+        if (serviceSelect.value === "custom" && customAmountInput.value) {
+            amountValue = customAmountInput.value;
+            descriptionValue = customDescriptionInput.value || "Custom Payment"; // Use provided description or default to "Custom Payment"
+            document.getElementById("paypal-amount").value = amountValue;
+            document.getElementById("paypal-item-name").value = descriptionValue;
+        }
+
+        if (!amountValue || !descriptionValue) {
+            alert("Please select a valid service and amount.");
+            event.preventDefault();
+        }
+    });
+    </script>
+    </section>
+
+    <section id="contact-form">
         <h3>Contact Form</h3>
+        <p>Attachments can be directly emailed to me using the contact email listed above.</p>
         <!-- <form id="contactForm">
             <input type="text" id="name" placeholder="Your Name" required><br>
             <input type="email" id="email" placeholder="Your Email" required><br>
@@ -147,11 +359,62 @@
             <!-- <input type="file" name="attachment"><br> -->
             <button type="submit">Submit</button>
        </form>
-
-       
-        
     </section>
+    <section id="refund-cancellation">
+        <h2>Refund and Cancellation Policy</h2>
+        <p>We strive to offer flexible and professional tutoring sessions. 
+            However, to ensure fairness and respect for both parties, we have the following policies in place regarding cancellations and refunds:</p>
+    
+        <h3>Cancellation Policy:</h3>
+            <ul>
+                <li><strong>24-Hour Notice:</strong> Cancellations must be made at least <strong>24 hours in advance</strong> to avoid any charges. 
+                    If you cancel within 24 hours, the session will be <strong>non-refundable</strong>.</li>
+                <li><strong>Late Cancellations:</strong> If you fail to show up for the scheduled session without prior cancellation, 
+                    it will be treated as a <strong>missed appointment</strong> and <strong>no refund will be issued</strong>.</li>
+            </ul>
+    
+        <h3>Refund Policy:</h3>
+        <ul>
+            <li><strong>No Refunds for Late Cancellations:</strong> If you cancel less than 24 hours before the appointment, 
+                or do not show up, you will be charged for the session.</li>
+            <li><strong>Extenuating Circumstances:</strong> If I am unable to attend the session due to circumstances out of your control
+                (e.g., illness or emergencies) and we are unable to reschedule, you will be provided with a <strong>full refund</strong>. </li>
+            <li><strong>Emergency Situations on Your Part:</strong> If an emergency or special circumstance arises and you are unable to make the session, 
+                <strong>proof of the emergency</strong> (e.g., doctor's note) will be required to qualify for a <strong>refund</strong>. 
+                Cancellations made after the 24-hour window, due to emergencies, will be refunded if the evidence is provided.</li>
+        </ul>
+    
+        <h3>Rescheduling Sessions:</h3>
+        <ul>
+            If you need to <strong>reschedule</strong> a session, please do so <strong>at least 24 hours in advance</strong>. 
+                We will do our best to accommodate you. If rescheduling is not possible due to my schedule, a <strong>full refund</strong> will be provided.
+        </ul>
+    
+        <h3>Special Requests or Emergencies:</h3>
+        <ul>
+            If you are facing a situation that may prevent you from attending the scheduled session, please <strong>reach out as soon as possible</strong>. 
+                We understand that life happens, and we will work with you to make reasonable accommodations or offer a refund if needed.
+        </ul>
+    </section>
+        
+    <style>
+        #refund-cancellation ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    
+        #refund-cancellation li {
+            margin-bottom: 10px;  /* Adds space between each list item */
+            line-height: 1.6;  /* Adjusts the spacing between lines of text */
+        }
+    
+        #refund-cancellation strong {
+            font-weight: bold;
+            display: inline; /* Ensures the bold text doesn't affect line spacing */
+        }
+    </style>
     <section>
+        <!-- Empty to add a space for the footer -->
     </section>
     <footer>
         &copy; 2025 Math Tutoring | Designed for GitHub Pages
