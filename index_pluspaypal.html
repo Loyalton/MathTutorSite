@@ -23,7 +23,6 @@
         <h2>Subjects Offered</h2>
         <div class="subjects">
             <ul>
-                <!-- <li>Elementary Math</li> -->
                 <li>Algebra</li>
                 <li>Geometry</li>
                 <li>Trigonometry</li>
@@ -32,21 +31,15 @@
                 <li>Differential Equations</li>
             </ul>
         </div>
-    <!-- </section>
-    <section> -->
         <h2>About Me</h2>
         <img src="Dorian_Headshot.png" alt="Your Picture">
         <h2>Dorian Lemus</h2>
         <p>Hi! I offer tutoring for a wide range of math subjects, from elementary math to advanced college-level courses.
         I am a college student majoring in Electrical Engineering. I love math and helping others to become confident and fill in the gaps in their knowledge. 
         I will meet you at any level you are and we will grow from there. Online and in-person tutoring available. Flexible hours 7 days a week. Hablo español!</p>
-    <!-- </section>
-    <section> -->
         <h2>Contact</h2>
         <p>Email: DorianLemusCruz@gmail.com</p>
         <p>Phone: (414) 745-5748</p>
-    <!-- </section>
-    <section> -->
         <h2>Rates & Payment</h2>
         <div class="rates">
             <p><strong>Hourly Rates:</strong></p>
@@ -55,17 +48,17 @@
                 <li>$45 for 2 hours</li>
             </ul>
             <p><strong>Individual Problem Walkthrough:</strong> </p>
-            <u1>
+            <ul>
                 <li>Starting at $5 per problem depending on complexity</li>
                 <p>* You will receive a detailed breakdown of the problem</p>
-            </u1>
+            </ul>
             <p><strong>Payment Methods:</strong></p>
             <ul>
                 <li>Cash</li>
-                <li>Zelle - 414-745-5748</li>
-                <li>Venmo - @RunRedFox</li>
-                <li>CashApp - $DorianL95</li>
-                <li>Paypal - DorianLemusCruz@gmail.com</li>
+                <li>Zelle</li>
+                <li>Venmo</li>
+                <li>CashApp</li>
+                <li>Paypal</li>
             </ul>
         </div>
         <h3>Pay via PayPal</h3>
@@ -130,28 +123,29 @@
             alert("Amount being sent to PayPal: " + amountField.value);
         });
         </script>
+
+
+      <!-- <script>
+          document.querySelector("select[name='amount']").addEventListener("change", function() {
+              const customAmountInput = document.querySelector("input[name='custom_amount']");
+              if (this.value === "custom") {
+                  customAmountInput.style.display = "block";
+                  customAmountInput.name = "amount";
+              } else {
+                  customAmountInput.style.display = "none";
+                  customAmountInput.name = "custom_amount";
+              }
+          });
+      </script> -->
         <h3>Contact Form</h3>
-        <!-- <form id="contactForm">
+        <form id="contactForm">
             <input type="text" id="name" placeholder="Your Name" required><br>
             <input type="email" id="email" placeholder="Your Email" required><br>
             <input type="tel" id="phone" placeholder="Your Phone Number"><br>
             <textarea id="message" placeholder="Describe what you need help with" required></textarea><br>
-            <input type="file" id="attachment"><br> -->
-            <!-- <button type="submit">Submit</button> -->
-        <!-- </form> -->
-        <form action="https://formspree.io/f/xqaedvwq" method="POST" enctype="multipart/form-data">
-            <input type="text" name="name" placeholder="Your Name" required><br>
-            <input type="email" name="email" placeholder="Your Email" required><br>
-            <input type="tel" name="phone" placeholder="Your Phone Number"><br>
-            <textarea name="message" placeholder="Describe what you need help with" required></textarea><br>
-            <!-- <input type="file" name="attachment"><br> -->
+            <input type="file" id="attachment"><br>
             <button type="submit">Submit</button>
-       </form>
-
-       
-        
-    </section>
-    <section>
+        </form>
     </section>
     <footer>
         &copy; 2025 Math Tutoring | Designed for GitHub Pages
@@ -164,7 +158,7 @@
             const phone = document.getElementById("phone").value;
             const message = document.getElementById("message").value;
             
-            const mailtoLink = `mailto:DorianLemusCruz@gmail.com?subject=New Tutoring Pupil - ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMessage: ${message}`;
+            const mailtoLink = `mailto:DorianLemusCruz@gmail.com?subject=New Customer - ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMessage: ${message}`;
             window.location.href = mailtoLink;
             
             document.getElementById("contactForm").reset();
