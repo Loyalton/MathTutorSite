@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Tutoring</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; background: #b8e1fb; }
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; background: #87CEEB; }
         header { background: #339966; color: white; padding: 20px; font-size: 36px; font-weight: bold; }
         section { padding: 20px; max-width: 800px; margin: auto; }
         img { max-width: 200px; border-radius: 50%; }
-        .subjects { text-align: left; display: inline-block; }
+        .subjects, .rates { text-align: left; display: inline-block; }
         footer { background: #339966; color: white; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        form { margin-top: 20px; }
+        input, button, textarea { padding: 10px; margin: 5px; width: 80%; max-width: 400px; }
     </style>
 </head>
 <body>
     <header>
         Math Tutoring Services
     </header>
-      <section>
+    <section>
         <h2>Subjects Offered</h2>
         <div class="subjects">
             <ul>
-                <li>Elementary Math</li>
+                <!-- <li>Elementary Math</li> -->
                 <li>Algebra</li>
                 <li>Geometry</li>
                 <li>Trigonometry</li>
@@ -30,20 +32,71 @@
                 <li>Differential Equations</li>
             </ul>
         </div>
+    <!-- </section>
+    <section> -->
         <h2>About Me</h2>
+        <img src="Dorian_Headshot.png" alt="Your Picture">
+        <h2>Dorian Lemus</h2>
         <p>Hi! I offer tutoring for a wide range of math subjects, from elementary math to advanced college-level courses.
         I am a college student majoring in Electrical Engineering. I love math and helping others to become confident and fill in the gaps in their knowledge. 
-          I will meet you at any level you are and we will grow from there. Online and in person tutoring available. Flexible hours 7 days a week.</p>
-        <img src="Dorian_Headshot.png" alt="Your Picture">
-    </section>
-
+        I will meet you at any level you are and we will grow from there. Online and in-person tutoring available. Flexible hours 7 days a week. Hablo español!</p>
+    <!-- </section>
+    <section> -->
         <h2>Contact</h2>
         <p>Email: DorianLemusCruz@gmail.com</p>
         <p>Phone: (414) 745-5748</p>
-	<p>Thank you for reaching out!</p>
+    <!-- </section>
+    <section> -->
+        <h2>Rates & Payment</h2>
+        <div class="rates">
+            <p><strong>Hourly Rates:</strong></p>
+            <ul>
+                <li>$25 per hour</li>
+                <li>$45 for 2 hours</li>
+            </ul>
+            <p><strong>Individual Problem Walkthrough:</strong> </p>
+            <u1>
+                <li>Starting at $5 per problem depending on complexity</li>
+                <p>* You will receive a detailed breakdown of the problem</p>
+            </u1>
+            <p><strong>Payment Methods:</strong></p>
+            <ul>
+                <li>Cash</li>
+                <li>Zelle</li>
+                <li>Venmo</li>
+                <li>CashApp</li>
+                <li>Paypal</li>
+            </ul>
+        </div>
+        <h3>Contact Form</h3>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required><br>
+            <input type="email" id="email" placeholder="Your Email" required><br>
+            <input type="tel" id="phone" placeholder="Your Phone Number"><br>
+            <textarea id="message" placeholder="Describe what you need help with" required></textarea><br>
+            <input type="file" id="attachment"><br>
+            <button type="submit">Submit</button>
+        </form>
     </section>
+    <section>
+    </section>
+    <footer>
+        &copy; 2025 Math Tutoring | Designed for GitHub Pages
+    </footer>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const message = document.getElementById("message").value;
+            
+            const mailtoLink = `mailto:DorianLemusCruz@gmail.com?subject=New Customer - ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMessage: ${message}`;
+            window.location.href = mailtoLink;
+            
+            document.getElementById("contactForm").reset();
+            alert("Your message has been submitted successfully!");
+        });
+    </script>
 </body>
-<footer>
-    &copy; 2025 Math Tutoring | Designed for GitHub Pages
-</footer>
 </html>
