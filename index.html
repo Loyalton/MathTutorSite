@@ -4,57 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Tutoring</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; 
-            background: #87CEEB; padding-top: 40px; /* Add padding to prevent the content from being hidden behind the header */ }
-        header { background: #339966; color: white; padding-top: 40px; padding-bottom: 10px; font-size: 36px; font-weight: bold; }
-        section { padding: 30px; max-width: 800px; margin: auto; }
-        img { max-width: 200px; border-radius: 50%; }
-        .subjects, .rates { text-align: left; display: inline-block; }
-        footer { background: #339966; color: white; padding: 10px; position: fixed; bottom: 0; width: 100%; }
-        form { margin-top: 20px; }
-        input, button, textarea, select { padding: 10px; margin: 5px; width: 80%; max-width: 400px; }
-        nav { background-color: #339966; padding: 15px; margin-bottom: 20px; 
-            position: fixed; /* Keeps the header fixed at the top */
-            top: 0; /* Aligns the header at the top */
-            left: 0; /* Aligns the header to the left of the page */
-            width: 100%; /* Ensures the header spans the full width */
-            z-index: 1000; /* Keeps the header above other content */}
-        nav a { color: white; text-decoration: none; padding: 10px 15px; margin: 0 5px; }
-        nav a:hover { background-color: #4CAF50; }
-
-
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
     <header>
         Math Tutoring Services
     </header>
 
     <!-- Table of Contents -->
-    <nav>
+    <!-- <nav>
         <a href="#about-me">About Me</a>
         <a href="#subjects-offered">Subjects Offered</a>
         <a href="#math-tutoring-rates">Math Tutoring Rates</a>
         <a href="#payment-methods">Payment Methods</a>
         <a href="#contact-form">Contact Form</a>
         <a href="#refund-cancellation">Refund and Cancellation Policy</a>
+         -->
     </nav>
-    <section  id="about-me">
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+              <a href="/" id="navbar__logo">Home</a>
+              <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+              <ul class="navbar__menu">
+                <li class="navbar__item">
+                  <a href="#about-me" class="navbar__links" id="about">About Me</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#subjects-offered" class="navbar__links" id="about-page">Subjects Offered</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#math-tutoring-rates" class="navbar__links" id="services-page"
+                    >Math Tutoring Rates</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#payment-methods" class="navbar__links" id="services-page"
+                      >Payment Methods</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact-form" class="navbar__links" id="services-page"
+                        >Contact Form</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#refund-cancellation" class="navbar__links" id="services-page"
+                        >Refund and Cancellation Policy</a>
+                </li>
+                <!-- <li class="navbar__btn">
+                  <a href="#contact-form" class="button" id="signup">Sign Up</a>
+                </li> -->
+              </ul>
+            </div>
+          </nav>
+
+    <!-- Translate Button Outside Navbar -->
+    <div class="translate-container">
+        <a id="translate-btn" class="button_trans">Español</a>
+    </div>
+
+
+    <!-- <li class="navbar__btn">
+        <a href="#sign-up" class="button" id="signup">Sign Up</a>
+    </li> -->
+
+    <section id="about-me">
         <h2>About Me</h2>
-            <img src="Dorian_Headshot.png" alt="Your Picture">
+            <img src="images/Dorian_Headshot.png" alt="Your Picture">
             <h3>Dorian Lemus</h3>
             <h4>Atlanta, GA</h4>
-            <p>Hi! I offer tutoring for a wide range of math subjects, from elementary math to advanced college-level courses.
-            I am a college student majoring in Electrical Engineering. I love math and helping others to become confident and fill in the gaps in their knowledge. 
-            I will meet you at any level you are and we will grow from there. Online and in-person (within 50 miles of the greater Atlanta area) tutoring available. 
-            Flexible hours 7 days a week. Hablo español!</p>
+            <p id="bio">
+                Hi! I offer tutoring for a wide range of math subjects, from elementary math to advanced college-level courses.
+                I am a college student majoring in Electrical Engineering. I love math and helping others to become confident and fill in the gaps in their knowledge.
+                I will meet you at any level you are and we will grow from there. Online and in-person (within 50 miles of the greater Atlanta area) tutoring available.
+                Flexible hours 7 days a week. Hablo español!
+            </p>
 
             <h2>Contact</h2>
             <p>Reach out to me via phone or email for a consultation.</p>
             <p>Email: <a href="mailto:DorianLemusCruz@gmail.com">DorianLemusCruz@gmail.com</a></p>
             <p>Phone: <a href="tel:+14147455748">(414) 745-5748</a></p>
-    </section>    
+    </section>   
+ 
     <section id="subjects-offered">
         <h2>Subjects Offered</h2>
         <div class="subjects">
@@ -188,17 +221,6 @@
     <section id="payment-methods">
     <h2>Payment Methods:</h2>
     <div class="rates">
-        <!-- <p><strong>Hourly Rates:</strong></p>
-        <ul>
-            <li>$25 per hour</li>
-            <li>$45 for 2 hours</li>
-        </ul>
-        <p><strong>Individual Problem Walkthrough:</strong> </p>
-        <u1>
-            <li>Starting at $5 per problem depending on complexity</li>
-            <p>* You will receive a detailed breakdown of the problem</p>
-        </u1> -->
-        <!-- <p><strong>Payment Methods:</strong></p> -->
         <ul>
             <li>Cash</li>
             <li>Zelle - 414-745-5748</li>
@@ -208,7 +230,7 @@
         </ul>
     </div>
     <h3>Pay via PayPal</h3>
-    <p>Make sure to fill out the contact form below if you haven't already indicated what service you selected.
+    <p id="payment-info">Make sure to fill out the contact form below if you haven't already indicated what service you selected.
         Once payment is received I will send you an email with the next steps to schedule our session. 
         Virtual Sessions are done via Google Meets or Zoom.
     </p>
@@ -419,5 +441,118 @@
             alert("Your message has been submitted successfully!");
         });
     </script>
+    <!-- <script>
+        document.getElementById("translate-btn").addEventListener("click", function () {
+            const transbutton = document.getElementById("translate-btn");
+            const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, li, button");
+
+            const multiLineBio = `Hi! I offer tutoring for a wide range of math subjects, from elementary math to advanced college-level courses. I am a college student majoring in Electrical Engineering. I love math and helping others to become confident and fill in the gaps in their knowledge. I will meet you at any level you are and we will grow from there. Online and in-person (within 50 miles of the greater Atlanta area) tutoring available. Flexible hours 7 days a week. Hablo español!`;
+
+            const multiLineBioSpanish = `¡Hola! Ofrezco tutoría en una amplia gama de materias de matemáticas, desde matemáticas básicas hasta cursos universitarios avanzados. Soy estudiante universitario de Ingeniería Eléctrica. Me encanta la matemática y ayudar a otros a ganar confianza y llenar los vacíos en su conocimiento. Te encontraré en el nivel en el que estés y creceremos desde ahí. Tutoría en línea y en persona (dentro de un radio de 50 millas del área metropolitana de Atlanta) disponible. Horarios flexibles los 7 días de la semana. ¡Hablo español!`;
+
+            const translations = {
+                "Math Tutoring Services": "Servicios de Tutoría de Matemáticas",
+                "About Me": "Sobre Mí",
+                "Subjects Offered": "Materias Ofrecidas",
+                "Math Tutoring Rates": "Precio de Tutoría de Matemáticas",
+                "Payment Methods": "Métodos de Pago",
+                "Contact Form": "Formulario de Contacto",
+                "Refund and Cancellation Policy": "Política de Reembolsos y Cancelaciones",
+                "Contact": "Contacto",
+                "Reach out to me via phone or email for a consultation.": "Contáctame por teléfono o correo electrónico para una consulta.",
+                "Email:": "Correo Electrónico:",
+                "Phone:": "Teléfono:",
+                "Pay via PayPal": "Pagar con PayPal",
+                "Make sure to fill out the contact form below if you haven't already indicated what service you selected. Once payment is received I will send you an email with the next steps to schedule our session. Virtual Sessions are done via Google Meets or Zoom.": "Asegúrese de completar el formulario de contacto a continuación si aún no ha indicado qué servicio seleccionó. Una vez recibido el pago, le enviaré un correo electrónico con los siguientes pasos para programar nuestra sesión. Las sesiones virtuales se realizan a través de Google Meets o Zoom.",
+                "Select a Service:": "Seleccione un Servicio:",
+                "Enter Custom Amount": "Ingrese Monto Personalizado",
+                "Middle School (Grades 6-8)": "Escuela Secundaria (Grados 6-8)",
+                "High School (Grades 9-12)": "Escuela Preparatoria (Grados 9-12)",
+                "Advanced & College-Level Courses": "Nivel Universitario / Matemáticas Avanzadas",
+                "Flexible hours 7 days a week. Hablo español!": "Horarios flexibles los 7 días de la semana. ¡Hablo español!",
+                
+            };
+
+            // Create a reverse translation object (Spanish to English)
+            const reverseTranslations = {};
+            for (let key in translations) {
+                reverseTranslations[translations[key]] = key;
+            }
+
+            // Check if currently in English or Spanish
+            const isEnglish = transbutton.innerText === "Español";
+
+            elements.forEach(el => {
+                el.childNodes.forEach(node => {
+                    if (node.nodeType === Node.TEXT_NODE) {
+                        const text = node.nodeValue.trim();
+                        if (isEnglish && translations[text]) {
+                            node.nodeValue = translations[text]; // Translate to Spanish
+                        } else if (!isEnglish && reverseTranslations[text]) {
+                            node.nodeValue = reverseTranslations[text]; // Translate back to English
+                        }
+                    }
+                });
+            });
+
+            // Translate the bio content specifically
+            const bioElement = document.getElementById("bio");
+            if (bioElement) {
+                bioElement.innerText = isEnglish ? multiLineBioSpanish : multiLineBio;
+            }
+            const paymentInfoElement = document.getElementById("payment-info");
+            if (paymentInfoElement) {
+                paymentInfoElement.innerText = isEnglish 
+                    ? translations["Make sure to fill out the contact form below if you haven't already indicated what service you selected. Once payment is received I will send you an email with the next steps to schedule our session. Virtual Sessions are done via Google Meets or Zoom."]
+                    : reverseTranslations["Asegúrese de completar el formulario de contacto a continuación si aún no ha indicado qué servicio seleccionó. Una vez recibido el pago, le enviaré un correo electrónico con los siguientes pasos para programar nuestra sesión. Las sesiones virtuales se realizan a través de Google Meets o Zoom."];
+            }
+
+
+            // Toggle button text
+            transbutton.innerText = isEnglish ? "English" : "Español";
+        });
+
+    </script>  -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const transbutton = document.getElementById("translate-btn");
+        
+            if (!transbutton) {
+                console.error("Translation button not found!");
+                return;
+            }
+        
+            transbutton.addEventListener("click", function () {
+                const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, li, button");
+        
+                // Check if we're translating to Spanish or English
+                const isEnglish = transbutton.innerText.trim() === "Español";
+        
+                elements.forEach(el => {
+                    el.childNodes.forEach(node => {
+                        if (node.nodeType === Node.TEXT_NODE) {
+                            const text = node.nodeValue.trim();
+                            if (isEnglish && translations[text]) {
+                                node.nodeValue = translations[text]; // Translate to Spanish
+                            } else if (!isEnglish && reverseTranslations[text]) {
+                                node.nodeValue = reverseTranslations[text]; // Translate back to English
+                            }
+                        }
+                    });
+                });
+        
+                // Toggle translation for specific elements (e.g., paragraphs)
+                const bioElement = document.getElementById("bio");
+                if (bioElement) {
+                    bioElement.innerText = isEnglish ? translations[bioElement.innerText.trim()] : reverseTranslations[bioElement.innerText.trim()];
+                }
+        
+                // Change button text
+                transbutton.innerText = isEnglish ? "English" : "Español";
+            });
+        });
+    </script>    
+    <script src="app.js"></script>
 </body>
 </html>
