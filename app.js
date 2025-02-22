@@ -114,7 +114,7 @@ const translations = {
 
   "No Refunds for Late Cancellations: If you cancel less than 24 hours before the appointment, or do not show up, you will be charged for the session.": 
   "Sin reembolsos por cancelaciones tardías: Si cancela con menos de 24 horas de anticipación o no se presenta, se le cobrará la sesión.",
-  "Extenuating Circumstances: If I am unable to attend the session due to circumstances out of my control (e.g., illness or emergencies) and we are unable to reschedule, you will be provided with a full refund.": 
+  "Extenuating Circumstances: If I am unable to attend the session due to circumstances out of your control (e.g., illness or emergencies) and we are unable to reschedule, you will be provided with a full refund.": 
   "Circunstancias atenuantes: Si no puedo asistir a la sesión debido a circunstancias fuera de mi control (por ejemplo, enfermedad o emergencias) y no podemos reprogramar, se le proporcionará un reembolso completo.",
   "Emergency Situations on Your Part: If an emergency or special circumstance arises and you are unable to make the session, proof of the emergency (e.g., doctor's note) will be required to qualify for a refund. Cancellations made after the 24-hour window, due to emergencies, will be refunded if the evidence is provided.": 
   "Situaciones de emergencia de su parte: Si surge una emergencia o circunstancia especial y no puede asistir a la sesión, se requerirá prueba de la emergencia (por ejemplo, una nota del médico) para calificar para un reembolso. Las cancelaciones realizadas después del período de 24 horas, debido a emergencias, serán reembolsadas si se proporciona evidencia."
@@ -128,5 +128,55 @@ for (let key in translations) {
   reverseTranslations[translations[key]] = key;
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const transbutton = document.getElementById("translate-btn");
+
+  if (!transbutton) {
+      console.error("Translation button not found!");
+      return;
+  }
+
+  transbutton.addEventListener("click", function () {
+      const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, li, button");
+      const navLinks = document.querySelectorAll("a"); // Separate navigation links
+
+      // Check if we're translating to Spanish or English
+      const isEnglish = transbutton.innerText.trim() === "Español";
+
+      // Special handling for navigation links (to keep href intact)
+      navLinks.forEach(el => {
+        el.childNodes.forEach(node => {
+            if (node.nodeType === Node.TEXT_NODE) { // Only modify text content
+                const text = node.nodeValue.trim();
+                if (isEnglish && translations[text]) {
+                    node.nodeValue = translations[text]; // Translate to Spanish
+                } else if (!isEnglish && reverseTranslations[text]) {
+                    node.nodeValue = reverseTranslations[text]; // Translate back to English
+                }
+            }
+        });
+      });
+      
+      // Translating the rest without messing up the links
+      elements.forEach(el => {
+          const text = el.innerText.trim();
+          if (isEnglish && translations[text]) {
+              el.innerText = translations[text]; // Translate to Spanish
+          } else if (!isEnglish && reverseTranslations[text]) {
+              el.innerText = reverseTranslations[text]; // Translate back to English
+          }
+      });
+    
+
+      // Toggle translation for specific elements (e.g., paragraphs)
+      // const bioElement = document.getElementById("bio");
+      // if (bioElement) {
+      //     bioElement.innerText = isEnglish ? translations[bioElement.innerText.trim()] : reverseTranslations[bioElement.innerText.trim()];
+      // }
+
+      // Change button text
+      transbutton.innerText = isEnglish ? "English" : "Español";
+  });
+});
 
 // End translation section

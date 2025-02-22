@@ -1,3 +1,8 @@
+/* Ensure no horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+}
+
 header { 
     background: #385850; 
     color: rgb(255, 255, 255); 
@@ -70,7 +75,6 @@ nav a:hover {
     color: #000;
 }
     
-
 
 
 section { 
@@ -292,6 +296,23 @@ img {
     #mobile-menu.is-active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+#refund-cancellation ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#refund-cancellation li {
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 10px;  /* Adds space between each list item */
+    line-height: 1.6;  /* Adjusts the spacing between lines of text */
+}
+
+#refund-cancellation strong {
+    font-weight: bold;
+    display: inline; /* Ensures the bold text doesn't affect line spacing */
 }
 
 footer { 
