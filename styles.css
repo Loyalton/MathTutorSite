@@ -1,7 +1,7 @@
 /* Ensure no horizontal scrolling */
-html, body {
+/* html, body {
     overflow-x: hidden;
-}
+} */
 
 header { 
     background: #385850; 
@@ -218,7 +218,7 @@ img {
       display: grid;
       grid-template-columns: auto;
       margin: 0;
-      width: 100%;
+      width: 95%;
       position: absolute;
       top: -1000px;
       opacity: 1;

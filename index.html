@@ -351,14 +351,6 @@
     <section id="contact-form">
         <h3>Contact Form</h3>
         <p>Attachments can be directly emailed to me using the contact email listed above.</p>
-        <!-- <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required><br>
-            <input type="email" id="email" placeholder="Your Email" required><br>
-            <input type="tel" id="phone" placeholder="Your Phone Number"><br>
-            <textarea id="message" placeholder="Describe what you need help with" required></textarea><br>
-            <input type="file" id="attachment"><br> -->
-            <!-- <button type="submit">Submit</button> -->
-        <!-- </form> -->
         <form action="https://formspree.io/f/xqaedvwq" method="POST" enctype="multipart/form-data">
             <input type="text" name="name" placeholder="Your Name" required><br>
             <input type="email" name="email" placeholder="Your Email" required><br>
@@ -394,14 +386,14 @@
     
         <h3>Rescheduling Sessions:</h3>
         <ul>
-            If you need to <strong>reschedule</strong> a session, please do so <strong>at least 24 hours in advance</strong>. 
-                We will do our best to accommodate you. If rescheduling is not possible due to my schedule, a <strong>full refund</strong> will be provided.
+            <li>If you need to <strong>reschedule</strong> a session, please do so <strong>at least 24 hours in advance</strong>. 
+                We will do our best to accommodate you. If rescheduling is not possible due to my schedule, a <strong>full refund</strong> will be provided.</li>
         </ul>
     
         <h3>Special Requests or Emergencies:</h3>
         <ul>
-            If you are facing a situation that may prevent you from attending the scheduled session, please <strong>reach out as soon as possible</strong>. 
-                We understand that life happens, and we will work with you to make reasonable accommodations or offer a refund if needed.
+            <li>If you are facing a situation that may prevent you from attending the scheduled session, please <strong>reach out as soon as possible</strong>. 
+                We understand that life happens, and we will work with you to make reasonable accommodations or offer a refund if needed.</li>
         </ul>
     </section>
         
@@ -426,118 +418,6 @@
             alert("Your message has been submitted successfully!");
         });
     </script>
-    <!-- <script>
-        document.getElementById("translate-btn").addEventListener("click", function () {
-            const transbutton = document.getElementById("translate-btn");
-            const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, li, button");
-
-            const multiLineBio = `Hi! I offer tutoring for a wide range of math subjects, from elementary math to advanced college-level courses. I am a college student majoring in Electrical Engineering. I love math and helping others to become confident and fill in the gaps in their knowledge. I will meet you at any level you are and we will grow from there. Online and in-person (within 50 miles of the greater Atlanta area) tutoring available. Flexible hours 7 days a week. Hablo español!`;
-
-            const multiLineBioSpanish = `¡Hola! Ofrezco tutoría en una amplia gama de materias de matemáticas, desde matemáticas básicas hasta cursos universitarios avanzados. Soy estudiante universitario de Ingeniería Eléctrica. Me encanta la matemática y ayudar a otros a ganar confianza y llenar los vacíos en su conocimiento. Te encontraré en el nivel en el que estés y creceremos desde ahí. Tutoría en línea y en persona (dentro de un radio de 50 millas del área metropolitana de Atlanta) disponible. Horarios flexibles los 7 días de la semana. ¡Hablo español!`;
-
-            const translations = {
-                "Math Tutoring Services": "Servicios de Tutoría de Matemáticas",
-                "About Me": "Sobre Mí",
-                "Subjects Offered": "Materias Ofrecidas",
-                "Math Tutoring Rates": "Precio de Tutoría de Matemáticas",
-                "Payment Methods": "Métodos de Pago",
-                "Contact Form": "Formulario de Contacto",
-                "Refund and Cancellation Policy": "Política de Reembolsos y Cancelaciones",
-                "Contact": "Contacto",
-                "Reach out to me via phone or email for a consultation.": "Contáctame por teléfono o correo electrónico para una consulta.",
-                "Email:": "Correo Electrónico:",
-                "Phone:": "Teléfono:",
-                "Pay via PayPal": "Pagar con PayPal",
-                "Make sure to fill out the contact form below if you haven't already indicated what service you selected. Once payment is received I will send you an email with the next steps to schedule our session. Virtual Sessions are done via Google Meets or Zoom.": "Asegúrese de completar el formulario de contacto a continuación si aún no ha indicado qué servicio seleccionó. Una vez recibido el pago, le enviaré un correo electrónico con los siguientes pasos para programar nuestra sesión. Las sesiones virtuales se realizan a través de Google Meets o Zoom.",
-                "Select a Service:": "Seleccione un Servicio:",
-                "Enter Custom Amount": "Ingrese Monto Personalizado",
-                "Middle School (Grades 6-8)": "Escuela Secundaria (Grados 6-8)",
-                "High School (Grades 9-12)": "Escuela Preparatoria (Grados 9-12)",
-                "Advanced & College-Level Courses": "Nivel Universitario / Matemáticas Avanzadas",
-                "Flexible hours 7 days a week. Hablo español!": "Horarios flexibles los 7 días de la semana. ¡Hablo español!",
-                
-            };
-
-            // Create a reverse translation object (Spanish to English)
-            const reverseTranslations = {};
-            for (let key in translations) {
-                reverseTranslations[translations[key]] = key;
-            }
-
-            // Check if currently in English or Spanish
-            const isEnglish = transbutton.innerText === "Español";
-
-            elements.forEach(el => {
-                el.childNodes.forEach(node => {
-                    if (node.nodeType === Node.TEXT_NODE) {
-                        const text = node.nodeValue.trim();
-                        if (isEnglish && translations[text]) {
-                            node.nodeValue = translations[text]; // Translate to Spanish
-                        } else if (!isEnglish && reverseTranslations[text]) {
-                            node.nodeValue = reverseTranslations[text]; // Translate back to English
-                        }
-                    }
-                });
-            });
-
-            // Translate the bio content specifically
-            const bioElement = document.getElementById("bio");
-            if (bioElement) {
-                bioElement.innerText = isEnglish ? multiLineBioSpanish : multiLineBio;
-            }
-            const paymentInfoElement = document.getElementById("payment-info");
-            if (paymentInfoElement) {
-                paymentInfoElement.innerText = isEnglish 
-                    ? translations["Make sure to fill out the contact form below if you haven't already indicated what service you selected. Once payment is received I will send you an email with the next steps to schedule our session. Virtual Sessions are done via Google Meets or Zoom."]
-                    : reverseTranslations["Asegúrese de completar el formulario de contacto a continuación si aún no ha indicado qué servicio seleccionó. Una vez recibido el pago, le enviaré un correo electrónico con los siguientes pasos para programar nuestra sesión. Las sesiones virtuales se realizan a través de Google Meets o Zoom."];
-            }
-
-
-            // Toggle button text
-            transbutton.innerText = isEnglish ? "English" : "Español";
-        });
-
-    </script>  -->
-
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const transbutton = document.getElementById("translate-btn");
-        
-            if (!transbutton) {
-                console.error("Translation button not found!");
-                return;
-            }
-        
-            transbutton.addEventListener("click", function () {
-                const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, li, button");
-        
-                // Check if we're translating to Spanish or English
-                const isEnglish = transbutton.innerText.trim() === "Español";
-        
-                elements.forEach(el => {
-                    el.childNodes.forEach(node => {
-                        if (node.nodeType === Node.TEXT_NODE) {
-                            const text = node.nodeValue.trim();
-                            if (isEnglish && translations[text]) {
-                                node.nodeValue = translations[text]; // Translate to Spanish
-                            } else if (!isEnglish && reverseTranslations[text]) {
-                                node.nodeValue = reverseTranslations[text]; // Translate back to English
-                            }
-                        }
-                    });
-                });
-        
-                // Toggle translation for specific elements (e.g., paragraphs)
-                const bioElement = document.getElementById("bio");
-                if (bioElement) {
-                    bioElement.innerText = isEnglish ? translations[bioElement.innerText.trim()] : reverseTranslations[bioElement.innerText.trim()];
-                }
-        
-                // Change button text
-                transbutton.innerText = isEnglish ? "English" : "Español";
-            });
-        });
-    </script>     -->
     <script src="app.js"></script>
 </body>
 </html>

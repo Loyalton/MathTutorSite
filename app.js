@@ -104,6 +104,67 @@ const translations = {
   "Make sure to fill out the contact form below if you haven't already indicated what service you selected. Once payment is received I will send you an email with the next steps to schedule our session. Virtual Sessions are done via Google Meets or Zoom.": "Asegúrese de completar el formulario de contacto a continuación si aún no ha indicado qué servicio seleccionó. Una vez recibido el pago, le enviaré un correo electrónico con los siguientes pasos para programar nuestra sesión. Las sesiones virtuales se realizan a través de Google Meet o Zoom.",
   "Attachments can be directly emailed to me using the contact email listed above.": "Los archivos adjuntos pueden enviarse directamente por correo electrónico utilizando la dirección de contacto mencionada arriba.",
 
+  // Tutoring rates table
+  "Rates are based on the complexity of the subject, session type, and whether tutoring is online or in-person.":
+  "Las tarifas se basan en la complejidad del tema, el tipo de sesión y si la tutoría es en línea o en persona.",
+
+  // Table Headers
+  "Grade Level": "Nivel de Grado",
+  "Service": "Servicio",
+  "Online Rate": "Tarifa en Línea",
+  "In-Person Rate": "Tarifa en Persona",
+  "Premium (Travel to You)": "Tarifa Premium (Viaje a Usted)",
+
+  // Grade Categories
+  "Middle School": "Escuela Secundaria",
+  "High School": "Escuela Preparatoria",
+  "College Level": "Nivel Universitario",
+
+  // Services
+  "- Individual Problem Walkthrough": "- Explicación Individual de Problema",
+  "- 1 Hour Tutoring Session": "- Sesión de Tutoría de 1 Hora",
+  "- 2 Hour Tutoring Session": "- Sesión de Tutoría de 2 Horas",
+
+  // Pricing Note
+  "Note: Premium rates apply if I have to travel to you. Prices may vary depending on subject complexity.":
+  "Nota: Se aplican tarifas premium si debo viajar a su ubicación. Los precios pueden variar según la complejidad del tema.",
+  // Payment Section
+  "Pay via PayPal": "Pagar con PayPal",
+  "Select a service...": "Seleccione un servicio...",
+  "Middle School (6-8)": "Escuela Secundaria (Grados 6-8)",
+  "High School (9-12)": "Escuela Preparatoria (Grados 9-12)",
+  "College Level / Advanced Math": "Nivel Universitario / Matemáticas Avanzadas",
+  "Premium Travel Charges": "Cargos Adicionales por Viaje",
+  "Other": "Otro",
+  "Enter Custom Amount": "Ingrese Monto Personalizado",
+  "Memo: what this payment is for?": "Memo: ¿para qué es este pago?",
+  "Additional Travel Fee (Local)": "Tarifa Adicional por Viaje (Local)",
+  "Additional Travel Fee (Extended Distance)": "Tarifa Adicional por Viaje (Distancia Extendida)",
+  "Individual Problem Walkthrough (Online) - $5+": "Explicación de Problema Individual (En Línea) - $5+",
+  "1 Hour Tutoring (Online) - $25": "Sesión de Tutoría de 1 Hora (En Línea) - $25",
+  "2 Hour Tutoring (Online) - $45": "Sesión de Tutoría de 2 Horas (En Línea) - $45",
+  "1 Hour Tutoring (In-Person) - $35": "Sesión de Tutoría de 1 Hora (Presencial) - $35",
+  "2 Hour Tutoring (In-Person) - $60": "Sesión de Tutoría de 2 Horas (Presencial) - $60",
+  "1 Hour Tutoring (Online) - $30": "Sesión de Tutoría de 1 Hora (En Línea) - $30",
+  "2 Hour Tutoring (Online) - $50": "Sesión de Tutoría de 2 Horas (En Línea) - $50",
+  "1 Hour Tutoring (In-Person) - $40": "Sesión de Tutoría de 1 Hora (Presencial) - $40",
+  "2 Hour Tutoring (In-Person) - $70": "Sesión de Tutoría de 2 Horas (Presencial) - $70",
+  "Additional Travel Fee (Local) - $10": "Tarifa Adicional por Viaje (Local) - $10",
+  "Additional Travel Fee (Extended Distance) - $20": "Tarifa Adicional por Viaje (Distancia Extendida) - $20",
+  "Custom Payment": "Pago Personalizado",
+  "Please select a valid service and amount.": "Seleccione un servicio y un monto válido.",
+
+  // Contact Form Section
+  "Contact Form": "Formulario de Contacto",
+  "Attachments can be directly emailed to me using the contact email listed above.": 
+  "Los archivos adjuntos pueden enviarse directamente por correo electrónico utilizando la dirección de contacto mencionada arriba.",
+  "Your Name": "Tu Nombre",
+  "Your Email": "Tu Correo Electrónico",
+  "Your Phone Number": "Tu Número de Teléfono",
+  "Describe what you need help with": "Describe en qué necesitas ayuda",
+  "Submit": "Enviar",
+ 
+
   // Refund and Cancellation Policy
   "Refund and Cancellation Policy": "Política de Reembolso y Cancelación",
   "We strive to offer flexible and professional tutoring sessions. However, to ensure fairness and respect for both parties, we have the following policies in place regarding cancellations and refunds:": "Nos esforzamos por ofrecer sesiones de tutoría flexibles y profesionales. Sin embargo, para garantizar la equidad y el respeto para ambas partes, hemos establecido las siguientes políticas con respecto a cancelaciones y reembolsos.",
@@ -117,7 +178,17 @@ const translations = {
   "Extenuating Circumstances: If I am unable to attend the session due to circumstances out of your control (e.g., illness or emergencies) and we are unable to reschedule, you will be provided with a full refund.": 
   "Circunstancias atenuantes: Si no puedo asistir a la sesión debido a circunstancias fuera de mi control (por ejemplo, enfermedad o emergencias) y no podemos reprogramar, se le proporcionará un reembolso completo.",
   "Emergency Situations on Your Part: If an emergency or special circumstance arises and you are unable to make the session, proof of the emergency (e.g., doctor's note) will be required to qualify for a refund. Cancellations made after the 24-hour window, due to emergencies, will be refunded if the evidence is provided.": 
-  "Situaciones de emergencia de su parte: Si surge una emergencia o circunstancia especial y no puede asistir a la sesión, se requerirá prueba de la emergencia (por ejemplo, una nota del médico) para calificar para un reembolso. Las cancelaciones realizadas después del período de 24 horas, debido a emergencias, serán reembolsadas si se proporciona evidencia."
+  "Situaciones de emergencia de su parte: Si surge una emergencia o circunstancia especial y no puede asistir a la sesión, se requerirá prueba de la emergencia (por ejemplo, una nota del médico) para calificar para un reembolso. Las cancelaciones realizadas después del período de 24 horas, debido a emergencias, serán reembolsadas si se proporciona evidencia.",
+  // Rescheduling Sessions
+  "Rescheduling Sessions:": "Reprogramación de Sesiones:",
+  "If you need to reschedule a session, please do so at least 24 hours in advance. We will do our best to accommodate you. If rescheduling is not possible due to my schedule, a full refund will be provided.":
+  "Si necesita reprogramar una sesión, hágalo al menos con 24 horas de anticipación. Haremos nuestro mejor esfuerzo para acomodarlo. Si no es posible reprogramar debido a mi disponibilidad, se le otorgará un reembolso completo.",
+
+  // Special Requests or Emergencies
+  "Special Requests or Emergencies:": "Solicitudes Especiales o Emergencias:",
+  "If you are facing a situation that may prevent you from attending the scheduled session, please reach out as soon as possible. We understand that life happens, and we will work with you to make reasonable accommodations or offer a refund if needed.":
+  "Si enfrenta una situación que pueda impedirle asistir a la sesión programada, comuníquese lo antes posible. Entendemos que la vida sucede, y trabajaremos con usted para hacer adaptaciones razonables o ofrecer un reembolso si es necesario."
+  
 };
 
 
@@ -137,8 +208,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   transbutton.addEventListener("click", function () {
-      const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, li, button");
+      const elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, optgroup, li, td, tr, th, button");
       const navLinks = document.querySelectorAll("a"); // Separate navigation links
+      const inputs = document.querySelectorAll("input[placeholder], textarea[placeholder]");
+      const options = document.querySelectorAll("#service-select option");
 
       // Check if we're translating to Spanish or English
       const isEnglish = transbutton.innerText.trim() === "Español";
@@ -166,13 +239,26 @@ document.addEventListener("DOMContentLoaded", function () {
               el.innerText = reverseTranslations[text]; // Translate back to English
           }
       });
-    
 
-      // Toggle translation for specific elements (e.g., paragraphs)
-      // const bioElement = document.getElementById("bio");
-      // if (bioElement) {
-      //     bioElement.innerText = isEnglish ? translations[bioElement.innerText.trim()] : reverseTranslations[bioElement.innerText.trim()];
-      // }
+      // Translate input and textarea placeholders
+      inputs.forEach(input => {
+          const placeholderText = input.placeholder.trim();
+          if (isEnglish && translations[placeholderText]) {
+              input.placeholder = translations[placeholderText];
+          } else if (!isEnglish && reverseTranslations[placeholderText]) {
+              input.placeholder = reverseTranslations[placeholderText];
+          }
+      });
+
+      // Translate dropdown options doesn't work right now
+      options.forEach(option => {
+          const optionText = option.innerText.trim();
+          if (isEnglish && translations[optionText]) {
+              option.innerText = translations[optionText]; 
+          } else if (!isEnglish && reverseTranslations[optionText]) {
+              option.innerText = reverseTranslations[optionText];
+          }
+      });
 
       // Change button text
       transbutton.innerText = isEnglish ? "English" : "Español";
